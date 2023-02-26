@@ -1,21 +1,23 @@
-import { Layout } from 'antd';
-import { Content, Header } from 'antd/es/layout/layout';
+import React, { memo } from "react";
+import { Layout } from "antd";
+import { Content, Header } from "antd/es/layout/layout";
 
-import ConfigBody from './config-body/ConfigBody';
-import css from './organisation-configuration.module.css';
-import TopSection from './top-section/TopSection';
+import ConfigBody from "./config-body/ConfigBody";
+import css from "./organisation-configuration.module.css";
+import TopSection from "./top-section/TopSection";
 
-const OrganisationConfiguration = () => {
+const OrganisationConfiguration: React.FC = memo(() => {
   return (
-    <Layout className={css['layout']}>
-      <Header className={css['header']}>
+    <Layout className={css["layout"]}>
+      <Header className={css["header"]}>
         <TopSection />
       </Header>
-      <Content className={css['content']}>
+      <Content className={css["content"]}>
         <ConfigBody />
       </Content>
     </Layout>
   );
-};
+});
 
+OrganisationConfiguration.displayName = "OrganisationConfiguration";
 export default OrganisationConfiguration;
