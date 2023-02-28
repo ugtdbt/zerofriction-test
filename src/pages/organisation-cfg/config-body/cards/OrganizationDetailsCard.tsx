@@ -3,10 +3,10 @@ import { Card, Form, Checkbox, Input } from "antd";
 import type { State } from "../../../../state";
 import { useSelector, useDispatch } from "react-redux";
 import type { OrganizationConfigType } from "../../../../utils/types/organisation-config";
-import type { FormInstance } from "antd/es/form";
+import type { FormInstance } from "antd/lib/form";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../../../state";
-import type { CheckboxChangeEvent } from "antd/es/checkbox";
+import type { CheckboxChangeEvent } from "antd/lib/checkbox";
 
 const OrganizationDetailsCard: React.FC = memo(() => {
   const initialValidationData = {
@@ -41,6 +41,7 @@ const OrganizationDetailsCard: React.FC = memo(() => {
     formRef.current?.resetFields();
     setFormErrors(initialValidationData);
     setFormDisabled(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formreset]);
 
   const [formValues, setFormValues] = useState<OrganizationConfigType>(
@@ -198,10 +199,11 @@ const OrganizationDetailsCard: React.FC = memo(() => {
       clickOrganizationDetailsSaveButton(formValues);
       setFormDisabled(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [save]);
 
   return (
-    <Card title="Organization Details">
+    <Card title="Organization Details" data-testid="organization-details-form">
       <Form
         labelCol={{ span: 10 }}
         wrapperCol={{ span: 14 }}
@@ -225,7 +227,7 @@ const OrganizationDetailsCard: React.FC = memo(() => {
           }
           help={formErrors.code.help !== "" ? formErrors.code.help : undefined}
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
 
         <Form.Item
@@ -242,7 +244,7 @@ const OrganizationDetailsCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
 
         <Form.Item
@@ -259,7 +261,7 @@ const OrganizationDetailsCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
         <Form.Item
           label="vatAccountNumber"
@@ -275,7 +277,7 @@ const OrganizationDetailsCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
         <Form.Item
           label="companyAccountNumber"
@@ -291,7 +293,7 @@ const OrganizationDetailsCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
       </Form>
     </Card>

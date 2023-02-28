@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactDetailsCard component ContactDetailsCardComponent Match Snapshot 1`] = `
+<div
+  className="ant-card ant-card-bordered css-dev-only-do-not-override-1km3mtt"
+  data-testid="contact-details-form"
+>
+  <div
+    className="ant-card-head"
+    style={Object {}}
+  >
+    <div
+      className="ant-card-head-wrapper"
+    >
+      <div
+        className="ant-card-head-title"
+      >
+        Contact Details
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <form
+      className="ant-form ant-form-horizontal css-dev-only-do-not-override-1km3mtt"
+      onReset={[Function]}
+      onSubmit={[Function]}
+      style={
+        Object {
+          "maxWidth": 600,
+        }
+      }
+    >
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="emailAddress"
+              title="EmailAddress"
+            >
+              EmailAddress
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="emailAddress"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="telephone"
+              title="Telephone"
+            >
+              Telephone
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="telephone"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={
+                    Object {
+                      "width": "100%",
+                    }
+                  }
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="website"
+              title="website"
+            >
+              website
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="website"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

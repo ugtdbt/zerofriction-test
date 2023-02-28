@@ -3,7 +3,7 @@ import { Card, Form, InputNumber, Input } from "antd";
 import type { State } from "../../../../state";
 import { useSelector, useDispatch } from "react-redux";
 import type { AddressType } from "../../../../utils/types/organisation-config";
-import type { FormInstance } from "antd/es/form";
+import type { FormInstance } from "antd/lib/form";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../../../state";
 
@@ -46,12 +46,14 @@ const AddressCard: React.FC = memo(() => {
       clickAddressSaveButton(formValues);
       setFormDisabled(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [save]);
 
   useEffect(() => {
     formRef.current?.resetFields();
     setFormErrors(initialValidationData);
     setFormDisabled(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formreset]);
 
   const [formValues, setFormValues] = useState<AddressType>(
@@ -210,7 +212,7 @@ const AddressCard: React.FC = memo(() => {
   };
 
   return (
-    <Card title="Address">
+    <Card title="Address" data-testid="address-form">
       <Form
         labelCol={{ span: 10 }}
         wrapperCol={{ span: 14 }}
@@ -233,7 +235,7 @@ const AddressCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
 
         <Form.Item
@@ -252,7 +254,8 @@ const AddressCard: React.FC = memo(() => {
         >
           <InputNumber
             onChange={handleStreetNumberChange}
-            style={{ width: 260 }}
+            onFocus={handleAddressChange}
+            style={{ width: "100%" }}
           />
         </Form.Item>
 
@@ -272,7 +275,8 @@ const AddressCard: React.FC = memo(() => {
         >
           <InputNumber
             onChange={handlePostalCodeChange}
-            style={{ width: 260 }}
+            onFocus={handleAddressChange}
+            style={{ width: "100%" }}
           />
         </Form.Item>
 
@@ -284,7 +288,7 @@ const AddressCard: React.FC = memo(() => {
           }
           help={formErrors.city.help !== "" ? formErrors.city.help : undefined}
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
 
         <Form.Item
@@ -297,7 +301,7 @@ const AddressCard: React.FC = memo(() => {
             formErrors.country.help !== "" ? formErrors.country.help : undefined
           }
         >
-          <Input onChange={handleAddressChange} />
+          <Input onChange={handleAddressChange} onFocus={handleAddressChange} />
         </Form.Item>
       </Form>
     </Card>

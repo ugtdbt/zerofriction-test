@@ -13,6 +13,8 @@ const ConfigBody: React.FC = memo(() => {
   const dispatch = useDispatch();
 
   const { isFormTouched } = bindActionCreators(actionCreators, dispatch);
+  
+  
   const handleClick = (e: any) => {
     setToched(true);
   };
@@ -21,17 +23,18 @@ const ConfigBody: React.FC = memo(() => {
     if (toched) {
       isFormTouched();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [toched]);
 
   return (
     <Row gutter={16} onClick={handleClick}>
-      <Col span={8}>
+      <Col xs={{ span: 24 }} md={{ span: 8 }}>
         <OrganizationDetailsCard />
       </Col>
-      <Col span={8}>
+      <Col xs={{ span: 24 }} md={{ span: 8 }}>
         <AddressCard />
       </Col>
-      <Col span={8}>
+      <Col xs={{ span: 24 }} md={{ span: 8 }}>
         <ContactDetailsCard />
       </Col>
     </Row>

@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressCard component OrganizationDetailsCardComponent Match Snapshot 1`] = `
+<div
+  className="ant-card ant-card-bordered css-dev-only-do-not-override-1km3mtt"
+  data-testid="organization-details-form"
+>
+  <div
+    className="ant-card-head"
+    style={Object {}}
+  >
+    <div
+      className="ant-card-head-wrapper"
+    >
+      <div
+        className="ant-card-head-title"
+      >
+        Organization Details
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <form
+      className="ant-form ant-form-horizontal css-dev-only-do-not-override-1km3mtt"
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="migrationMode"
+              title="Migration Mode"
+            >
+              Migration Mode
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <label
+                  className="ant-checkbox-wrapper ant-checkbox-wrapper-in-form-item css-dev-only-do-not-override-1km3mtt"
+                >
+                  <span
+                    className="ant-checkbox css-dev-only-do-not-override-1km3mtt"
+                    style={Object {}}
+                  >
+                    <input
+                      checked={false}
+                      className="ant-checkbox-input"
+                      disabled={false}
+                      id="migrationMode"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyPress={[Function]}
+                      onKeyUp={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="ant-checkbox-inner"
+                    />
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="code"
+              title="code"
+            >
+              code
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="code"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="description"
+              title="description"
+            >
+              description
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="description"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="bankAccount"
+              title="bankAccount"
+            >
+              bankAccount
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="bankAccount"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="vatAccountNumber"
+              title="vatAccountNumber"
+            >
+              vatAccountNumber
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="vatAccountNumber"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-form-item css-dev-only-do-not-override-1km3mtt"
+      >
+        <div
+          className="ant-row ant-form-item-row css-dev-only-do-not-override-1km3mtt"
+          style={Object {}}
+        >
+          <div
+            className="ant-col ant-col-10 ant-form-item-label css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <label
+              className=""
+              htmlFor="companyAccountNumber"
+              title="companyAccountNumber"
+            >
+              companyAccountNumber
+            </label>
+          </div>
+          <div
+            className="ant-col ant-col-14 ant-form-item-control css-dev-only-do-not-override-1km3mtt"
+            style={Object {}}
+          >
+            <div
+              className="ant-form-item-control-input"
+            >
+              <div
+                className="ant-form-item-control-input-content"
+              >
+                <input
+                  className="ant-input css-dev-only-do-not-override-1km3mtt"
+                  disabled={false}
+                  id="companyAccountNumber"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  style={Object {}}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

@@ -3,13 +3,14 @@ import { Card, Form, Input } from "antd";
 import type { State } from "../../../../state";
 import { useSelector, useDispatch } from "react-redux";
 import type { ContactDetailType } from "../../../../utils/types/organisation-config";
-import type { FormInstance } from "antd/es/form";
+import type { FormInstance } from "antd/lib/form";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../../../state";
 
 const ContactDetailsCard: React.FC = memo(() => {
   const formRef = React.useRef<FormInstance>(null);
   const emailRegex = /\S+@\S+\.\S+/;
+  // eslint-disable-next-line no-useless-escape
   const telephoneRegex = /^[0-9\+]{1,11}$/;
 
   const initialValidationData = {
@@ -39,6 +40,7 @@ const ContactDetailsCard: React.FC = memo(() => {
     formRef.current?.resetFields();
     setFormErrors(initialValidationData);
     setFormDisabled(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formreset]);
 
   useEffect(() => {
@@ -46,6 +48,7 @@ const ContactDetailsCard: React.FC = memo(() => {
       clickContactDetailsSaveButton(formValues);
       setFormDisabled(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [save]);
 
   const [formValues, setFormValues] = useState<ContactDetailType>(
@@ -166,7 +169,7 @@ const ContactDetailsCard: React.FC = memo(() => {
   };
 
   return (
-    <Card title="Contact Details">
+    <Card title="Contact Details" data-testid="contact-details-form">
       <Form
         labelCol={{ span: 10 }}
         wrapperCol={{ span: 14 }}
@@ -189,7 +192,10 @@ const ContactDetailsCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input onChange={handleContactDetailsChnage} />
+          <Input
+            onChange={handleContactDetailsChnage}
+            onFocus={handleContactDetailsChnage}
+          />
         </Form.Item>
         <Form.Item
           label="Telephone"
@@ -205,7 +211,11 @@ const ContactDetailsCard: React.FC = memo(() => {
               : undefined
           }
         >
-          <Input style={{ width: 260 }} onChange={handleContactDetailsChnage} />
+          <Input
+            style={{ width: "100%" }}
+            onChange={handleContactDetailsChnage}
+            onFocus={handleContactDetailsChnage}
+          />
         </Form.Item>
         <Form.Item
           label="website"
@@ -217,7 +227,10 @@ const ContactDetailsCard: React.FC = memo(() => {
             formErrors.website.help !== "" ? formErrors.website.help : undefined
           }
         >
-          <Input onChange={handleContactDetailsChnage} />
+          <Input
+            onChange={handleContactDetailsChnage}
+            onFocus={handleContactDetailsChnage}
+          />
         </Form.Item>
       </Form>
     </Card>

@@ -1,4 +1,3 @@
-import { Console } from "console";
 import type { State, Action } from "../../utils/Interfaces";
 import type { OrganizationConfigType } from "../../utils/types/organisation-config";
 
