@@ -1,15 +1,16 @@
 ## Note
 - To enable save button please add valid data to all fields(All fields are required).
-- regression testing screenshot in `snapshots` folder.
+- Regression testing screenshot in `snapshots` folder.
 
 ## stop to unnecessary re renders 
 - Use React memo for all child components.
 
 `import { memo } from "react";`
+
 `const AddressCard: React.FC = memo(() => {`
 
-- can use useCallback Hook to remove nunesosory rerendering. 
-    In our application data is not shared between components using props, so we did not use useCallback in any place.
+- can use useCallback Hook to remove nunesosory re-rendering. 
+- In our application data is not shared between components using props, so we did not use useCallback in any place.
 
 ## Aditional Added Scripts
 
