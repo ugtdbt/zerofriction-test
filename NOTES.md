@@ -1,5 +1,6 @@
 ## Note
 - To enable save button please add valid data to all fields(All fields are required).
+- regression testing screenshot in `snapshots` folder.
 
 ## stop to unnecessary re renders 
 - Use React memo for all child components.
