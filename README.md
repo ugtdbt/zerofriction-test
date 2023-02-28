@@ -19,4 +19,5 @@ In the project directory, you can run:
 - Run unit test
 
 `yarn test`
+
 `yarn test:coverage`
